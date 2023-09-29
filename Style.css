@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color_0: rgba(255, 255, 255);
+    --color_1: rgba(255, 255, 255);
+    --color_2: rgba(0, 0, 0);
+    --color_3: rgba(237, 28, 36);
+    --color_4: rgba(0, 136, 203);
+    --color_5: rgba(255, 203, 5);
+    --color_6: rgba(114, 114, 114);
+    --color_7: rgba(176, 176, 176);
+    --color_8: rgba(255, 255, 255);
+    --color_9: rgba(114, 114, 114);
+    --color_10: rgba(176, 176, 176);
+    --color_11: rgba(255, 255, 255);
+    --color_12: rgba(232, 230, 230);
+    --color_13: rgba(199, 199, 199);
+    --color_14: rgba(97, 97, 97);
+    --color_15: rgba(0, 0, 0);
+    --color_16: rgba(223, 199, 167);
+    --color_17: rgba(191, 160, 120);
+    --color_18: rgba(159, 107, 40);
+    --color_19: rgba(106, 71, 27);
+    --color_20: rgba(53, 36, 13);
+    --color_21: rgba(215, 219, 251);
+    --color_22: rgba(176, 185, 247);
+    --color_23: rgba(132, 139, 185);
+    --color_24: rgba(88, 93, 124);
+    --color_25: rgba(33, 35, 46);
+    --color_26: rgba(253, 254, 205);
+    --color_27: rgba(238, 240, 131);
+    --color_28: rgba(228, 232, 21);
+    --color_29: rgba(152, 155, 14);
+    --color_30: rgba(76, 77, 7);
+    --color_31: rgba(255, 228, 236);
+    --color_32: rgba(216, 169, 176);
+    --color_33: rgba(191, 86, 102);
+    --color_34: rgba(154, 78, 50);
+    --color_35: rgba(77, 39, 25);
+    --color_36: rgba(255, 255, 255);
+    --color_37: rgba(0, 0, 0);
+    --color_38: rgba(232, 230, 230);
+    --color_39: rgba(199, 199, 199);
+    --color_40: rgba(97, 97, 97);
+    --color_41: rgba(159, 107, 40);
+    --color_42: rgba(0, 0, 0);
+    --color_43: rgba(199, 199, 199);
+    --color_44: rgba(255, 255, 255);
+    --color_45: rgba(0, 0, 0);
+    --color_46: rgba(0, 0, 0);
+    --color_47: rgba(232, 230, 230);
+    --color_48: rgba(159, 107, 40);
+    --color_49: rgba(159, 107, 40);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*----------------- navbar-1 ------------------- */
+
+.container{
+    height: auto;
+    width: 100%;
+    
+}
+
+.navbar-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    border-bottom: 1px solid var(--color_2);
+    padding: 0 3rem;
+}
+
+.logo {
+    width: 50%;
+    border-right: .1px solid var(--color_2);
+}
+
+.logo h1 {
+    font-size: 3rem;
+}
+
+.navlist {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navlist li {
+    list-style: none
+}
+
+.navlist li:not(:first-child) a {
+    color: var(--color_0);
+    background: var(--color_2);
+    border: .1rem solid var(--color_2);
+    padding: .4rem 3rem;
+    border-radius: 5rem;
+    font-weight: 500;
+    transition: .3s;
+}
+.active{
+    background: var(--color_0or_0);
+    color: var(--color_2); 
+    border: .1rem solid var(--color_2);
+    padding: .4rem 3rem;
+    border-radius: 5rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navlist li a:hover {
+    background: var(--color_0);
+    color: var(--color_2);
+}
+
+
+/*----------------- navbar-2 ------------------- */
+.navbar-2 {
+    height: 4rem;
+    width: 100%;
+    border-bottom: .1px solid var(--color_2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    width: 25rem;
+    padding: 0 3rem;
+    height: 4rem;
+    border: .1px solid var(--color_2);
+    border-top: none;
+    outline: none;
+}
+
+.search span {
+    position: absolute;
+    left: .5rem;
+    top: 1.3rem;
+    font-size: 1.3rem;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.login h4 {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    cursor: pointer;
+    color: rgb(63, 63, 63);
+}
+.login h4:hover {
+    color: var(--color_2);
+}
+
+
+/*----------------- navbar-2 ------------------- */
+
+.navbar-3 {
+    height: 4rem;
+    width: 100%;
+    background: var(--color_22);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.offer h2 {
+    font-size: 2rem;
+}
+
+.icons a {
+    color: var(--color_2);
+}
+
+.icons i {
+    margin-right: 1rem;
+    font-size: 1.3rem;
+}
+
+
+/*----------------- Header ------------------- */
+.header {
+    background: url(Images/header-img-1.webp) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 0 0 4rem;
+    height: 80vh;
+    width: 0;
+    position: relative  ;
+    left: -100%;
+    overflow: hidden;
+}
+
+.header h1 {
+    font-weight: bolder;
+    font-size: 4rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    font-stretch: extra-expanded;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 15%;
+    left: -100%;
+}
+
+.header h3 {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    line-height: 2.8rem;
+    font-weight: normal;
+    position: absolute;
+    top: 38%;
+    left: -100%;
+}
+
+.header button {
+    background: var(--color_2);
+    color: var(--color_0);
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    border: none;
+    position: absolute;
+    top: 55%;
+    left: -100%;
+}
+
+.header button:hover {
+    background: var(--color_0);
+    color: var(--color_2);
+    cursor: pointer;
+    transition: .3s;
+}
+
